@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    color:#b2b2b2;
+}
+
+.caixa {
+    background-color: #111;
+    color: white;
+    border-radius: 4px;
+    /* width:100%; >> eu tinha colocado width, mas aí o site não fica responsivo. Se tirar ele ajusta o box à tela*/
+    padding: 25px; /*no caso ele parece maior pq o h2 já tem um estilo padrão embutido que é uma margem pra cima e abaixo. Para remover, coloca margin 0 para h2. */
+    margin: 20px;
+}
+
+h2 {
+    margin: 0px;
+}
+
+span {
+    color: #febe01;
+}
+
+a {
+    display: inline-block; /*não tinha colocado este!! Faz com q o elemento continue inline, mas passa a receber as propriedades do box model. (elemento a é inline***)*/
+    background-color: #febe01;
+    color: #332200;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 10px;
+}
