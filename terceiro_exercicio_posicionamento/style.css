@@ -1,0 +1,118 @@
+/*Primeiro eu fiz o projeto do meu jeito. Os comentários são minhas notes após a correção do exercício junto com o professor.*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightseagreen;
+    margin: 0px;
+    display: grid; /*não tinha colocado aqui no body*/ 
+    gap: 60px; /*esse gap vai ser aplicado em todos os itens, pq tá pegando o geralzao body*/ 
+    justify-items: center; /*para centralizar a parte de cima*/
+    margin-top: 60px;
+}
+
+img {
+    max-width: 100%; /*eu tinha colocado width só, não deu certo*/
+    display: block; /*tb não tinha colocado*/
+}   
+
+p,
+h1,
+h2,
+h3 {
+    margin: 0px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;    
+}
+
+.flex a {
+    background: #ffffff;
+    color: black;   
+    padding: 20px;
+    border-radius: 4px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p{
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* padding: 20px; */ 
+    max-width: 1000px;
+}
+
+.introducao {
+    background-color: #ffffff;
+    padding: 40px;
+    text-align: right;
+    position: relative; /*para que o detalhe red fique em relação a este bloco, colocamos relative*/
+    display: grid; /*um grid dentro do grid*/
+    gap: 20px;
+    align-content: center;
+    justify-items: end;
+}
+
+.detalhe { /*ITEM QUE EU NÃO TINHA COLOCADO*/
+    width: 60px;
+    height: 4px;
+    background: #ee2211;
+    position: absolute; /*não quero que ele influencie em nada os outros elementos*/
+    top: 30px;
+    right: -30px;
+}
+
+.botao {
+    background: #ee2211;
+    border-radius: 4px;
+    color: #fff;
+    /* display: inline-block; */
+    margin: 0px;
+    padding: 15px 30px;
+}
+
+.vantagens {
+    color: #c6c6c6;
+    font-size: 64px;
+    text-transform: uppercase;
+    text-align: right;
+    padding: 40px;
+    align-self: center; /*alinhar só um item usa o SELF*/
+}
+
+.info {
+    background: #fff;
+    padding: 40px; /*tinha colocado em outro lugar*/
+  
+}
+
+.info-item {
+    /* font-weight: bold; >>> não precisa, pq o título tá em h3, então ele já é negrito*/ 
+    display: grid; /*O PULO DO GATO! Para alinhar os ícones com o texto, temos duas colunas. Logo, usamos o grid*/
+    grid-template-columns: auto 1fr; /*o auto é para pegar o tamanho do ícone, e o resto do espaço é didstribuído para o texto*/
+    gap: 10px 20px; /*primeiro valor refere a linha, segundo a coluna */
+    padding: 20px;
+}
+
+.info-item p {
+    grid-column: 2; /*para que o texto fique logo abaixo do título, na coluna da direita*/
+}
+
+.rodape {
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    /* margin: 0; */
+    padding: 40px;
+    box-sizing: border-box; /*para falar que quero que respeite o width e não dê a barra lateral*/
+}
