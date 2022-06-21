@@ -1,0 +1,42 @@
+.bicicleta {
+  height: 600px;
+  background-color: lightblue; /*pega no conteúdo só se não tiver tamanho definido*/
+  background-image: url("./img/bicicleta.jpg");
+  background-repeat: no-repeat; /*para que a img não fique repetindo*/
+  background-size: cover; /*se usar cover, atentar para o height, se não a img pode ficar mto grande e perder resolução*/
+  background-position: center top; /*para quando mexer no tamanho da tela, ele responde diminuindo do centro*/
+  /* background: lightblue url("./img/bicicleta.jpg") no-repeat cover center top; */
+  /*se colocar somente background ele considera todos os valores de background, pois é um atalho, então precisa detalhar.Neste caso como ele está por último, o html puxa somente a instrução dele e desconsidera os anteriores.*/
+  display: flex;
+}
+
+h1 {
+  margin: auto; /*qdo tiver DISPLAY FLEX, ele vai alinhar ao centro da página*/
+  background: #C96AF1;
+  padding: 1rem 2rem;
+}
+
+.pattern {
+  height: 300px;
+  background-color: #ebaefb;
+  background-image: url("./img/pattern.svg");
+  background-repeat: repeat; /*pode colocar repeat-x para repetir só no eixo x ou repeat-y*/
+  /* background-size: 500px; >> e nesse caso ele não perde qualidade por ser svg*/ 
+}
+
+/*TIPOS DE GRADIENTE*/
+.linear {
+  height: 200px;
+  background-image: linear-gradient(
+    to right,
+    #fbcabb 0%, /*se não colocar a % ele vai distribuir igualmente*/
+    #f9b0c3 10%,/*quantas cores quiser*/
+    #e3abce 20%, 
+    #a2c8ec 30%
+  );
+}
+
+.radial {
+  height: 200px;
+  background-image: radial-gradient(circle, #01c6bf, #ce56b7, #ffe401); /*pode deixar sem o circle*/
+}
