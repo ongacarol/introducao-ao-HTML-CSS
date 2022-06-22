@@ -1,0 +1,55 @@
+a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-family: Arial;
+  text-decoration: none;
+  background: #caf;
+  color: #217;
+}
+
+/*PSEUDO CLASSES: 1-ESTADO */
+a:hover {
+  background: #adf;
+  color: #147;
+}
+
+a:focus { /*usa o tab para navegar*/
+  background: #cfa;
+  color: #371;
+}
+
+a:active { /*muda quando clica no elemento*/
+  background: #ffa;
+  color: #761;
+}
+
+/* a:visited { Para links que já foram visitados.
+  background: #fda;
+  color: #731;
+} */
+
+/*PSEUDO CLASSES: 2-SELETORES*/
+.lista-1 li:first-child {
+  background: #caf;
+}
+
+.lista-1 li:last-child {
+  background: #cfa;
+}
+
+.lista-1 li:nth-child(3) { /*"even" para pares, "odd" para ímpares*/
+  background: #cfa;
+}
+
+.lista-2 li:nth-child(4n) { /*o n é pra pular um intervalo, de 2 em 2, de 4 em 4 etc*/ 
+  background: #cfa;
+}
+
+.lista-3 li:not(:first-child, :last-child, .terceiro) { /*exclui todos que estiverem marcados como not*/
+  background: #caf;
+}
+
+h2:not(.contato) {
+  text-decoration: underline;
+}
