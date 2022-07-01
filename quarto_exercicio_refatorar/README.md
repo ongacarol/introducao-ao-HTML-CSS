@@ -1,7 +1,9 @@
-<H2>
+<H2>HTML Exercício 4 - Refatorar exercício 3
+
+  <P> Esta atividade prática visa refazer a terceira atividade aplicando propriedades de semântica e acessibilidade, landmarks, pseudo classes e pseudo elementos, entre outras funcionalidades do CSS.
   
-  <P>
-    **Especificações**
+
+- Especificações -
 Utilizar tags semânticas
 
 nav, article, ul e outras. Utilizar aria-label quando possível.
