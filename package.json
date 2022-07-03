@@ -10,7 +10,8 @@
     "quarto_exercicio_refatorar": "parcel quarto_exercicio_refatorar/index.html",
     "segundo_exercicio_display_carros": "parcel segundo_exercicio_display_carros/index.html",
     "terceiro_exercicio_posicionamento": "parcel terceiro_exercicio_posicionamento/index.html",
-    "teste": "parcel teste/index.html"
+    "teste": "parcel teste/index.html",
+    "quinto_exercicio_responsivo": "parcel quinto_exercicio_responsivo/index.html"
   },
   "repository": {
     "type": "git",
