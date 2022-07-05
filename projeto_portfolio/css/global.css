@@ -19,6 +19,7 @@ ul {
 
 img {
     max-width: 100%;
+    height: auto; /*como definiu valores fixos no html, colocamos auto em height para manter a razao da imagem em relacao ao width*/
     display: block;
 }
 
