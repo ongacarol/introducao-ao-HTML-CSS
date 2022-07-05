@@ -1,0 +1,6 @@
+@import './global.css'; /*importanto o arquivo para este aqui. Não é a forma mais otimizada, mas por ora vai fazer o projeto assim*/
+@import './header.css'; 
+@import './introducao.css';
+@import './experiencia.css';
+@import './formacao.css';
+@import './footer.css';
