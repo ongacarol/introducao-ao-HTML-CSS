@@ -1,0 +1,113 @@
+.experiencia { /*mesma estrutura da classe introdução, então poderia ter uma classe para ambos*/ 
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px; 
+}
+
+.experiencia .subtitulo {
+    color: #e0e0e0;
+}
+
+.experiencia-texto {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    margin-bottom: 100px;
+    max-width: 40ch; /*para o texto não abrir mto, ele tem um máx de 40 caracteres, fora isso ele pode diminuir*/
+    color: #525252;
+}
+
+.experiencia-texto strong {
+    color: #141414;
+}
+
+.empresa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px; /*valor vertical, valor horizontal*/
+    padding: 20px;
+    background: #f5f5f5;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    position: relative;
+}
+/*criar o elemento decorativo*/
+
+.empresa::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#b6f829, #67dd0a);
+    position: absolute;
+    top: 20px;
+    left: -4px; /* para por pra fora do cntr, a distância é a largura dele*/
+}
+
+.empresa-ano {
+    position: absolute;
+    left: -50px;
+    top: 22px;
+    /* text-align: right; */
+    color: #525252;
+    font-size: 0.875rem;
+}
+
+.empresa-titulo {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.empresa-texto {
+    font-size: 0.875rem;
+    color: #525252;
+    line-height: 1.4;
+
+}
+
+.empresa-habilidade {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: start;
+}
+
+.empresa-habilidade li{
+    font-size: 0.875rem;
+    line-height: 1.4;
+    border-radius: 4px;
+    background: #ffffff;
+    padding: 5px 10px;
+}
+
+@media (max-width: 800px) {
+    .experiencia {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .experiencia .subtitulo {
+        color: #141414;
+    }
+    .experiencia-texto {
+        font-size: 1.25rem;
+    }
+    .empresa-ano {
+        position: initial;
+        order: 1; /*o zero é o primeiro e o 1 é o último, pq os outros elementos não estão ordenados. Então ele vai lá pra baixo, mas o leitor continua lendo o ano primeiro */
+        width: initial;
+        text-align: left;
+        /* color: blueviolet; */
+    }
+    /* .empresa-ano::before {  FICA SÓ PRA IDEIA*/
+        /* content: "Ano: "; */
+    /* } */
+}
+
+@media (max-width: 400px) {
+    .empresa {
+        grid-template-columns: 1fr;
+    }
+}

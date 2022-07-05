@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobo - Desenvolvedor e designer</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header"> <!--vou falar com a classe header, nao confunde caso tenha outra tag header-->
+        <img src="./img/marca.svg" alt="Lobo">
+        <nav>
+            <ul class="header-menu"> <!--atenção que a classe tá no ul, pq eu quero que o flex pegue todos os lis, se estivesse no nav o flex pegaria só o bloco ul-->     
+                <li><a href="#experiencie">Experiência</a></li> <!--o # é para links internos, para saber que quero que linke a ID na pag-->
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="introducao">
+        <img src="./img/perfil.jpg" alt="Lobo cinza">
+        <div>
+            <h1>Desenvolvedor <br>Front end e <br>UX/UI designer</h1> <!--<br> é um break para quebrar a linha do texto, independente do tamanho da tela-->
+            <p>Localizada em Minas Gerais</p>
+        </div>
+    </main>
+<!--section pq só faz sentido neste contexto--> 
+    <section class="experiencia" id="experiencia" aria-label="Experiência"> <!--o id aqui para fazer link interno com o #experiencia do menu-->
+        <!--aria label para definir um ponto de ref-->
+        <h2 class="subtitulo">Experiência</h2>
+        
+        <div> <!--***ATENCAO*** tinha colocado a class na tag errada, por isso deu pau-->
+            <p class="experiencia-texto">iuhasoih jaosidjaoisjdoij <strong>HTML</strong> e <strong>CSS</strong> joiasdj aoisjdl aihsk joalksdjiqo oqiwjkl lkajsl alsjd </p>   
+        <!--o strong é para dar destaque não só visual, mas também de importância-->
+
+            <div class="empresa">
+                <span class="empresa-ano">2045</span>
+                <h3 class="empresa-titulo">Bikcraft</h3>
+                <span class="empresa-titulo">Desenvolvedor júnior</span> <!--a classe é igual pq o estilo para ambos é o mesmo-->
+                <p class="empresa-texto">trabalhei fazendo aknlaksj msdlkfj psokdiopaks m aspdokaspodkpokaspfj nos jmeojk</p>
+                <ul class="empresa-habilidade">
+                    <li>html</li>
+                    <li>javascript</li>
+                    <li>css</li>
+                    <li>ingles</li>
+                </ul>
+            </div>
+
+            <div class="empresa">
+                <span class="empresa-ano">2045</span>
+                <h3 class="empresa-titulo">Bikcraft</h3>
+                <span class="empresa-titulo">Desenvolvedor júnior</span> <!--a classe é igual pq o estilo para ambos é o mesmo-->
+                <p class="empresa-texto">trabalhei fazendo aknlaksj msdlkfj psokdiopaks m aspdokaspodkpokaspfj nos jmeojk</p>
+                <ul class="empresa-habilidade">
+                    <li>html</li>
+                    <li>javascript</li>
+                    <li>css</li>
+                    <li>ingles</li>
+                </ul>
+            </div>
+
+            <div class="empresa">
+                <span class="empresa-ano">2045</span>
+                <h3 class="empresa-titulo">Bikcraft</h3>
+                <span class="empresa-titulo">Desenvolvedor júnior</span> <!--a classe é igual pq o estilo para ambos é o mesmo-->
+                <p class="empresa-texto">trabalhei fazendo aknlaksj msdlkfj psokdiopaks m aspdokaspodkpokaspfj nos jmeojk</p>
+                <ul class="empresa-habilidade">
+                    <li>html</li>
+                    <li>javascript</li>
+                    <li>css</li>
+                    <li>ingles</li>
+                </ul>
+            </div> 
+
+        </div>
+    </section>
+
+    <section class="formacao" id="formacao" aria-label="Formação">  <!--se definir max-width 1200px para a section inteira, se ele for maior que 1200 ele vai ter um background diferente -->
+        <div class="formacao-container"> <!--então essa div vai manter o conteúdo no 1200, mas a section vai pintar o background por trás de outra cor e vai crescer infinitamente pro lado-->
+            <h2 class="subtitulo">Formação</h2>
+
+            <div>
+                <p class="formacao-texto">ajsdi asjd  aosij weoijrf fmslkfm poweufj <strong>PURPPLE</strong> oijsaoid aoisdj aiojd <strong>poasdkpo</strong> oajs aisoj aj qwdskjf.</p>
+
+                <ul class="faculdade-lista">
+                    <li class="faculdade">
+                        <span class="faculdade-tipo">bacharel</span>
+                        <h3 class="faculdade-curso">admnistrcao</h3>
+                        <span class="faculdade-instituicao">UFMNG</span>
+                    </li>
+                    <li class="faculdade">
+                        <span class="faculdade-tipo">tecnoloog</span>
+                        <h3 class="faculdade-curso">admnistrcao</h3>
+                        <span class="faculdade-instituicao">UFMNG</span>
+                    </li>
+                    <li class="faculdade">
+                        <span class="faculdade-tipo">mestrado</span>
+                        <h3 class="faculdade-curso">admnistrcao</h3>
+                        <span class="faculdade-instituicao">UFMNG</span>
+                    </li>
+                </ul>
+
+                <div class="formacao-extra">
+                    <div class="cursos">
+                        <h3>Cursos intensivos</h3>
+                        <ul>
+                            <li>nome do curso <span>56h</span></li>
+                            <li>nome do curso <span>56h</span></li>
+                        </ul>
+                    </div>
+                    <div class="idiomas">
+                        <h3>Idiomas</h3>
+                        <ul>
+                            <li>Ingles<span>avançado</span></li>
+                            <li>Japones <span>intermediario</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contato">
+        <div class="footer-container">
+            <p class="footer-texto">Estou disponivel para trabalhos etc ailsijd  aiosj ashd asojid sf</p>
+            <ul class="footer-contato">
+                <li>email@gmail.com</li>
+                <li>3331544</li>
+                <li><a href="/">@carol-instagram</a></li>
+            </ul>
+            <p class="footer-copy">Lobo. Alguns direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
