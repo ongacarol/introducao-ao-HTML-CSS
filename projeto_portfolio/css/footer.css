@@ -1,5 +1,5 @@
 .footer {
-    background: #000000;
+    background: 	#000000;
 }
 
 .footer-container {
@@ -15,25 +15,25 @@
 .footer-texto {
     font-size: 1.5rem;
     line-height: 1.33;
-    color: #cccccc;
+    color: #ceb6d9;
 }
 
 .footer-contato li {
     font-weight: bold;
     font-size: 2.25rem;
     line-height: 1.1;
-    color: #ffffff;
+    color: #a2c8ec;
     margin-bottom: 30px;
 }
 
 .footer-contato li a {
-    color: #ffffff;
+    color: #a2c8ec;
 }
 
 .footer-copy {
     grid-column: 1 / -1; /*pega todas as colunas da parte de baixo do grid*/
     font-size: 1.125rem;
-    color: #8f8f8f;
+    color: #e3abce;
 }
 
 @media (max-width: 800px) {

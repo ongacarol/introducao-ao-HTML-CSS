@@ -25,7 +25,7 @@
 }
 
 .formacao .subtitulo {
-    color: #000000;
+    color: #57005F;
     max-width: 5ch;
 }
 
@@ -34,7 +34,7 @@
     line-height: 1.33;
     margin-bottom: 100px;
     max-width: 40ch; /*para o texto não abrir mto, ele tem um máx de 40 caracteres, fora isso ele pode diminuir*/
-    color: #a3a3a3;
+    color: #C66DEC;
 }
 
 .formacao-texto strong {
@@ -50,7 +50,7 @@
 
 .faculdade {
     flex: 1; /*para que fique os cntrs um do lado do outro de tamanho aprox igual*/
-    background: #000000;
+    background: #BD8BF0;
     padding: 20px;
     border-radius: 4px;
     display: flex;
@@ -60,7 +60,7 @@
 .faculdade-tipo {
     font-size: 0.875rem;
     text-transform: uppercase;
-    color: #a3a3a3;
+    color: #141414;
     margin-bottom: 10px; /*não aplica pq ele é um span por padrão. Para mudar o elemento, modifica para display flex (acima)*/
 }
 
@@ -77,14 +77,14 @@
     display: block;
     width: 4px;
     height: 20px;
-    background: linear-gradient(#b6f829, #67dd0a);
+    background: linear-gradient(#BD8BF0, #A41DEC);
     position: absolute;
     left: -24px;
 }
 
 .faculdade-instituicao {
     font-size: 1.125rem;
-    color: #a3a3a3;
+    color: #141414;
 }
 
 .cursos {
@@ -94,7 +94,7 @@
 .formacao-extra {
     font-size: 0.875rem;
     line-height: 1.4;
-    color: #8f8f8f;
+    color: #C66DEC;
     text-transform: uppercase;
     margin-bottom: 30px;
     position: relative; /*para p ícone que fica do lado*/
@@ -125,7 +125,7 @@
 }
 
 .formacao-extra span {
-    color: #8f8f8f;
+    color: #57005F;
 }
 
 .cursos li {

@@ -8,7 +8,7 @@
 }
 
 .experiencia .subtitulo {
-    color: #e0e0e0;
+    color: #F4DFFC;
 }
 
 .experiencia-texto {
@@ -40,7 +40,7 @@
     display: block;
     width: 4px;
     height: 20px;
-    background: linear-gradient(#b6f829, #67dd0a);
+    background: linear-gradient(#BD8BF0 , #A41DEC);
     position: absolute;
     top: 20px;
     left: -4px; /* para por pra fora do cntr, a distância é a largura dele*/
@@ -48,7 +48,7 @@
 
 .empresa-ano {
     position: absolute;
-    left: -50px;
+    left: -60px;
     top: 22px;
     /* text-align: right; */
     color: #525252;
@@ -79,7 +79,7 @@
     font-size: 0.875rem;
     line-height: 1.4;
     border-radius: 4px;
-    background: #ffffff;
+    background: #EFCAFF;
     padding: 5px 10px;
 }
 
