@@ -1,0 +1,43 @@
+/*Outros seletores...
+
+Seleciona os elementos que tiverem o atributo dentro dos [].*/
+[required] {
+    border: 2px solid red;
+  }
+  
+  /*Seleciona apenas o elemento que tiver o atributo e o valor.*/
+  [name='email'] {
+    border: 2px solid blue;
+  }
+  
+  /*Atributos que comecem ^ com o valor.*/
+  [href^='#'] {
+    border: 2px solid green;
+  }
+  
+  /* Atributos que terminem $ com o valor. */
+  [href$='origamid.com'] {
+    border: 2px solid gold;
+  }
+  
+  /* Apenas p que for filho direto de div */
+  section > h2 {
+    color: tomato;
+  }
+  
+  p {
+    margin: 0px;
+    font-size: 1.5rem;
+  }
+  
+  article {
+    background: lightgreen;
+    padding: 10px;
+  }
+  
+  /* Todo p que vier após um elemento p. Então no caso tem 3 Ps, vai pegar o 2 e o 3. */
+  p + p {
+    margin-top: 20px;
+  }
+  
+  /* asterisco * Seleciona todos os elementos do site. */

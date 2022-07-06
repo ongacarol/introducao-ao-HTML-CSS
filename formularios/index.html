@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h1>Propriedades de formulários com HTML e CSS</h1>
+
+    <form action="./">
+        <label for="nome">Nome</label> 
+        <input type="text" id="nome" name="nome">
+        <!--label: elemento inline; input: elemento inline-block-->
+        <!--o valor de for relaciona a label e o input. O valor que utilizamos é o id. For e ID tem que ser iguais.-->
+        <!--name são os parametros que são add na url qdo clicamos. É importante para enviar os dados para o arquivo PHP -->
+
+        <label for="senha">Senha</label> 
+        <input type="password" id="senha" name="senha" placeholder="000.000.000-00"> 
+        <!--o password mascara o q tá escrito, mas aparece na url. NÃO SUBSTITUIR A LABEL POR PLACEHOLDER.-->
+
+        <label for="email">Email</label> 
+        <input type="email" id="email" name="email" required> 
+        <!--o email faz ser obrigatório @ / REQUIRED não deixa o form ser enviado se algum campo estiver em branco-->
+
+        <label for="idade">Idade</label> 
+        <input type="number" id="idade" name="idade" disabled> <!--disabled desabilita o campo-->
+
+        <label for="Saída">Saída do hotel</label> 
+        <input type="date" id="Saída" name="Saída">
+        <!--note que para date aparece um calendário automático-->
+
+        <label for="parcelas"></label>
+        <select name="parcelas" id="parcelas">
+            <option value="1x">1x de R$200</option>
+            <option value="2x">2x de R$100</option>
+            <option value="4x">4x de R$50</option>
+        </select>
+        <!--value é a info que aparece na url-->
+
+        <div class="checkbox">
+            <input type="checkbox" id="termos" name="termos" value="aceito">
+            <label for="termos">Aceito os termos e condições da empresa.</label>
+        </div>
+
+        <div class="checkbox">
+            <input type="checkbox" id="anuncio" name="anuncio">
+            <label for="anuncio">Desejo receber anúncios.</label>
+        </div>
+
+        <p>Entrega:</p>
+        <div class="radio">
+            <input type="radio" id="retirada" name="retirada">
+            <label for="retirada">Retirar no local.</label>
+        </div>
+        <div class="radio">
+            <input type="radio" id="entrega" name="retirada">
+            <label for="entrega">Entrega em casa.</label>
+        </div>
+        <!--No RADIO, se mantem o mesmo name, ele só vai aceitar uma marcação-->
+
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="5"></textarea>
+
+        <!--Button dentro de form envia/ativa a action do form.-->
+        <button>Enviar</button>
+        <!--Button != Link. o button ou ele envia formulário ou faz alguma atividade direto no site, e não tem a mãozinha. O link envia para um site diferente-->
+        
+    </form>
+</body>
+</html>

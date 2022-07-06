@@ -12,7 +12,8 @@
     "terceiro_exercicio_posicionamento": "parcel terceiro_exercicio_posicionamento/index.html",
     "teste": "parcel teste/index.html",
     "quinto_exercicio_responsivo": "parcel quinto_exercicio_responsivo/index.html",
-    "projeto_portfolio": "parcel projeto_portfolio/index.html"
+    "projeto_portfolio": "parcel projeto_portfolio/index.html",
+    "formularios": "parcel formularios/index.html"
   },
   "repository": {
     "type": "git",
